@@ -4,7 +4,7 @@ from datetime import datetime
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 # 🤖 Telegram bot token from BotFather
-BOT_TOKEN = "7699323740:AAEY1CAqw6cO6fc6PK65WA1A5p3aQzrwWu0"
+BOT_TOKEN = "8289977072:AAEMGRJSXAk7oybtEBYCXii5NI3ER7PlxWM"
 bot = telebot.TeleBot(BOT_TOKEN)
 
 # 🔐 NumVerify API Key
@@ -12,13 +12,13 @@ NUMVERIFY_API_KEY = "841f50bc15a39a9c48bb0e464e2140f0"
 NUMVERIFY_URL = "http://apilayer.net/api/validate"
 
 # 📌 Replace this with your channel or source link
-SOURCE_LINK = "https://t.me/+mE65-mow0HkzNmM9"
+SOURCE_LINK = "https://t.me/+i-Dne2oZ1eZkYzQ1"
 
 # 🟢 /start command
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
     bot.reply_to(message, 
-    "👋 Welcome to the *Phone Lookup Bot!*\n\n📲 Send any phone number like:\n`+919999999999` or `9999999999`\n\nYou'll get full details in stylish format ✨\n\n👨‍💻 Coded by: *@MastiTimeN2*", 
+    "👋 Welcome to the *Phone Lookup Bot!*\n\n📲 Send any phone number like:\n`+919999999999` or `9999999999`\n\nYou'll get full details in stylish format ✨\n\n👨‍💻 Coded by: *@Comman_men*", 
     parse_mode='Markdown')
 
 # 🔍 Phone number lookup
@@ -78,12 +78,12 @@ def lookup_number(message):
 
 🕒 *Checked on:* `{timestamp}`
 
-👨‍💻 Coded by: *SkyNova*
+👨‍💻 Coded by: *dhruv*
         """
 
         # 🟢 Inline Button
         markup = InlineKeyboardMarkup()
-        markup.add(InlineKeyboardButton("SRC HERE", url="https://t.me/+mE65-mow0HkzNmM9"))
+        markup.add(InlineKeyboardButton("SRC HERE", url="https://t.me/+i-Dne2oZ1eZkYzQ1"))
 
         bot.send_message(message.chat.id, result, parse_mode="Markdown", disable_web_page_preview=True, reply_markup=markup)
 
